@@ -14,7 +14,7 @@ The Encoder-Decoder Project tackles the creation of a model which classifies pix
 ## Math for AI Project 1 (Visualizing PCA):
 This file contains a solution to a exam exercise in which we had to visualize a PCA of the Olivetti faces dataset. I completed the task in two ways. First I calculated the principal components and transformed the data back to the original bases to visualize the transformed faces in comparison to the original one. Secondly I plotted the data in a pairwise plot of each principle component to each other.
 
-##Math for AI Presentation (Optimizer Comparison):
+## Math for AI Presentation (Optimizer Comparison):
 This program written for a university presentation tackles the challenge of comparing different optimizers with 3D-plots in a kind of race. You can put in every parameter and function for 5 different kinds of optimizers and run the plot with output pngs, gif and txt file with the used parameters.
 To run the code you can install the used packages in a conda environment:
 conda create -n optimizer python=3.8
