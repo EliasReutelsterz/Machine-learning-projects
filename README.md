@@ -16,9 +16,9 @@ This file contains a solution to a exam exercise in which we had to visualize a 
 
 ## Math for AI Presentation (Optimizer Comparison):
 This program written for a university presentation tackles the challenge of comparing different optimizers with 3D-plots in a kind of race. You can put in every parameter and function for 5 different kinds of optimizers and run the plot with output pngs, gif and txt file with the used parameters.
-To run the code you can install the used packages in a conda environment:
-conda create -n optimizer python=3.8
-conda activate optimizer
-pip install -r requirements.txt
-python main.py
+To run the code you can install the used packages in a conda environment: <br />
+conda create -n optimizer python=3.8 <br />
+conda activate optimizer <br />
+pip install -r requirements.txt <br />
+python main.py <br />
 I wrote the program on basis of <a href="https://github.com/Jaewan-Yun/optimizer-visualization">this code<\a> which used an old version of tensorflow for the gradient calculation. I used pytorch instead.
