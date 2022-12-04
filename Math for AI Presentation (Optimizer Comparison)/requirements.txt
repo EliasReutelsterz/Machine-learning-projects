@@ -1,0 +1,6 @@
+torch == 1.9
+matplotlib == 3.5.3
+numpy == 1.21.6
+imageio == 2.8.0
+datetime == 4.7
+dill == 0.3.6
