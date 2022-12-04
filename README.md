@@ -9,7 +9,12 @@ This project contains a two layered neural network from scratch. It can calculat
 This project treats a pytorch environment in which the CIFAR10 dataset should be used. First of all the so called VGG-16 model was used and afterwards we had to fill in the missing pieces of the ResNet-50 model. Both models can be tested and the checkpoints are saved in the attached files.
 
 ## Deep Learning Project 3 (Encoder-Decoder Implementation):
-The Encoder-Decoder Project tackles the creation of a model which classifies pixels of images in different categories. Here two different models are trained, the U-Net and the Res-Net. It works mainly with a down-path to reduce dimensions and then a corresponding up-path to increase dimensions again. In between the single layers in both paths both are connected through concatenation. In the program we first load a trained model, then train it on our own and save the validation images and the updated parameters. One can switch between the models with changing import, loading of trained model and model creation. The currently uploaded files contain a realization of the training and you can see the results in history. But the output weights are not saved because of the size of the files.
+The Encoder-Decoder Project tackles the creation of a model which classifies pixels of images in different categories. Here two different models are trained, the U-Net and the Res-Net. It works mainly with a down-path to reduce dimensions and then a corresponding up-path to increase dimensions again. In between the single layers in both paths both are connected through concatenation. In the program we first load a trained model, then train it on our own and save the validation images and the updated parameters. One can switch between the models with changing import, loading of trained model and model creation. The currently uploaded files contain a realization of the training and you can see the results in history. But the output weights are not saved because of the size of the files. <br />
+<br />
+<p float="left">
+  <img src="https://github.com/EliasReutelsterz/Machine-learning-projects/blob/main/README_images/1label.png" width="200" />
+  <img src="https://github.com/EliasReutelsterz/Machine-learning-projects/blob/main/README_images/1result.png" width="200" /> 
+</p>
 
 ## Math for AI Project 1 (Visualizing PCA):
 This file contains a solution to a exam exercise in which we had to visualize a PCA of the Olivetti faces dataset. I completed the task in two ways. First I calculated the principal components and transformed the data back to the original bases to visualize the transformed faces in comparison to the original one. Secondly I plotted the data in a pairwise plot of each principle component to each other.
@@ -21,4 +26,7 @@ conda create -n optimizer python=3.8 <br />
 conda activate optimizer <br />
 pip install -r requirements.txt <br />
 python main.py <br />
-I wrote the program on basis of <a href="https://github.com/Jaewan-Yun/optimizer-visualization">this code</a> which used an old version of tensorflow for the gradient calculation. I used pytorch instead.
+I wrote the program on basis of <a href="https://github.com/Jaewan-Yun/optimizer-visualization">this code</a> which used an old version of tensorflow for the gradient calculation. I used pytorch instead. <br />
+<br />
+<img src="https://github.com/EliasReutelsterz/Machine-learning-projects/blob/main/README_images/math_for_ai_presentation.png" height="300" />
+
