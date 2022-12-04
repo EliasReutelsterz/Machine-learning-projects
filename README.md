@@ -21,4 +21,4 @@ conda create -n optimizer python=3.8 <br />
 conda activate optimizer <br />
 pip install -r requirements.txt <br />
 python main.py <br />
-I wrote the program on basis of <a href="https://github.com/Jaewan-Yun/optimizer-visualization">this code<\a> which used an old version of tensorflow for the gradient calculation. I used pytorch instead.
+I wrote the program on basis of <a href="https://github.com/Jaewan-Yun/optimizer-visualization">this code</a> which used an old version of tensorflow for the gradient calculation. I used pytorch instead.
