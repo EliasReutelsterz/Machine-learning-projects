@@ -1,0 +1,11 @@
+Those are the parameters used for the corresponding plots:
+ loss_function = lambda x, y: 10.0 + (x**2 - 10.0 * torch.cos(2.0 * torch.pi * x)) + (y**2 - 10.0 * torch.cos(2 * torch.pi * y))
+ x_start: 1.0, y_start: 1.0
+ iterations: 50, iteration_pause: 1e-05
+ x_axis: [(-12, 13)]
+ y_axis: [(-12, 13)]
+ GD: learning_rate: 0.05, learning_rate_decay: 0.95
+ Momentum: learning_rate: 0.02, learning_rate_decay: 0.95, velocity_loss_rate = 0.8
+ Nesterov: learning_rate: 0.02, learning_rate_decay: 0.95, velocity_loss_rate = 0.8
+ RMS Prop: learning_rate: 0.4, learning_rate_decay: 0.95, squared_grad_forget_rate = 0.8
+ Adam: learning_rate: 0.2, learning_rate_decay: 0.95, exponential_decay_rate_first_moment = 0.9, adam_exponential_decay_rate_second_moment = 0.999

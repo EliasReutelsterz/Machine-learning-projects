@@ -1,0 +1,7 @@
+Those are the parameters used for the corresponding plots:
+ loss_function = lambda x, y: torch.sin(y) * torch.exp(1-torch.cos(x))**2 + torch.cos(x) * torch.exp(1-torch.sin(y))**2 + (x-y)**2
+ x_start: -6.0, y_start: -2.0
+ iterations: 50, iteration_pause: 1e-05
+ x_axis: [(-10, 0)]
+ y_axis: [(-10, 0)]
+ GD: learning_rate: 0.01, learning_rate_decay: 1.0
