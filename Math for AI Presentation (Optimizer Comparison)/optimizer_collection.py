@@ -108,23 +108,23 @@ class Optimizer_Collection():
             momentum_learning_rate = self.optimizers["Momentum"].learning_rate
             momentum_learning_rate_decay = self.optimizers["Momentum"].learning_rate_decay
             momentum_velocity_loss_rate = self.optimizers["Momentum"].velocity_loss_rate
-            optimizer_string += f" Momentum: learning_rate: {momentum_learning_rate}, learning_rate_decay: {momentum_learning_rate_decay}, velocity_loss_rate = {momentum_velocity_loss_rate}\n"
+            optimizer_string += f" Momentum: learning_rate: {momentum_learning_rate}, learning_rate_decay: {momentum_learning_rate_decay}, velocity_loss_rate: {momentum_velocity_loss_rate}\n"
         if "Nesterov" in self.optimizers.keys():
             nesterov_learning_rate = self.optimizers["Nesterov"].learning_rate
             nesterov_learning_rate_decay = self.optimizers["Nesterov"].learning_rate_decay
             nesterov_velocity_loss_rate = self.optimizers["Nesterov"].velocity_loss_rate
-            optimizer_string += f" Nesterov: learning_rate: {nesterov_learning_rate}, learning_rate_decay: {nesterov_learning_rate_decay}, velocity_loss_rate = {nesterov_velocity_loss_rate}\n"
+            optimizer_string += f" Nesterov: learning_rate: {nesterov_learning_rate}, learning_rate_decay: {nesterov_learning_rate_decay}, velocity_loss_rate: {nesterov_velocity_loss_rate}\n"
         if "RMS_Prop" in self.optimizers.keys():
             rms_prop_learning_rate = self.optimizers["RMS_Prop"].learning_rate
             rms_prop_learning_rate_decay = self.optimizers["RMS_Prop"].learning_rate_decay
             rms_prop_squared_grad_forget_rate = self.optimizers["RMS_Prop"].squared_grad_forget_rate
-            optimizer_string += f" RMS Prop: learning_rate: {rms_prop_learning_rate}, learning_rate_decay: {rms_prop_learning_rate_decay}, squared_grad_forget_rate = {rms_prop_squared_grad_forget_rate}\n"
+            optimizer_string += f" RMS Prop: learning_rate: {rms_prop_learning_rate}, learning_rate_decay: {rms_prop_learning_rate_decay}, squared_grad_forget_rate: {rms_prop_squared_grad_forget_rate}\n"
         if "Adam" in self.optimizers.keys():
             adam_learning_rate = self.optimizers["Adam"].learning_rate
             adam_learning_rate_decay = self.optimizers["Adam"].learning_rate_decay
             adam_exponential_decay_rate_first_moment = self.optimizers["Adam"].exponential_decay_rate_first_moment
             adam_exponential_decay_rate_second_moment = self.optimizers["Adam"].exponential_decay_rate_second_moment
-            optimizer_string += f" Adam: learning_rate: {adam_learning_rate}, learning_rate_decay: {adam_learning_rate_decay}, exponential_decay_rate_first_moment = {adam_exponential_decay_rate_first_moment}, adam_exponential_decay_rate_second_moment = {adam_exponential_decay_rate_second_moment}\n"
+            optimizer_string += f" Adam: learning_rate: {adam_learning_rate}, learning_rate_decay: {adam_learning_rate_decay}, exponential_decay_rate_first_moment: {adam_exponential_decay_rate_first_moment}, adam_exponential_decay_rate_second_moment: {adam_exponential_decay_rate_second_moment}\n"
 
         try:
             loss_function_string = getsource(self.loss_function)
